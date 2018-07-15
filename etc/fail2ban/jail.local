@@ -1,0 +1,52 @@
+# Thursday, July 12, 2018 (GMT+7)
+
+[luna]
+enabled  = true
+filter   = luna-f2b
+port     = http,https
+logpath  = %(nginx_access_log)s
+           %(apache_access_log)s
+maxretry = 3
+bantime = 1h
+
+[web-exploits]
+enabled  = true
+filter   = web-exploits
+port     = http,https
+logpath  = %(nginx_access_log)s
+           %(apache_access_log)s
+maxretry = 3
+bantime  = 1h
+
+[auto-block-short-udp]
+enabled  = true
+filter   = auto-block-short-udp
+port     = 27015
+logpath  = /var/log/kern.log
+maxretry = 3
+bantime  = 1h
+
+[wordpress-hard]
+enabled  = true
+filter   = wordpress-hard
+port     = http,https
+logpath  = /var/log/auth.log
+maxretry = 1
+bantime  = 1h
+
+[wordpress-soft]
+enabled  = true
+filter   = wordpress-soft
+port     = http,https
+logpath  = /var/log/auth.log
+maxretry = 3
+bantime  = 1h
+
+[rate-limiting]
+enabled  = true
+filter   = rate-limiting
+action   = iptables-multiport[name=ReqLimit, port="http,https", protocol=tcp]
+logpath  = /var/log/nginx/*error.log
+maxretry = 10
+findtime = 60
+bantime  = 1h
