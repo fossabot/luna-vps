@@ -1,6 +1,6 @@
 # i, ri, or u
 ```
-cd /etc && bash <(wget -O - https://raw.githubusercontent.com/VirtuBox/nginx-ee/master/nginx-build.sh)
+cd /etc && bash <(wget -O - https://raw.githubusercontent.com/hoaroicuaphat/luna-vps/master/luna.sh)
 ```
 # s
 ## `http`
