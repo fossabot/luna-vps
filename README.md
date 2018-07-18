@@ -1,4 +1,6 @@
 # i, ri, or u
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhoaroicuaphat%2Fluna-vps.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhoaroicuaphat%2Fluna-vps?ref=badge_shield)
+
 ```
 cd /etc && bash <(wget -O - https://raw.githubusercontent.com/hoaroicuaphat/luna-vps/master/luna.sh)
 ```
@@ -76,3 +78,7 @@ ip/Meowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 echo '-U 0' >> /etc/memcached.conf
 service memcached restart
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhoaroicuaphat%2Fluna-vps.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhoaroicuaphat%2Fluna-vps?ref=badge_large)
